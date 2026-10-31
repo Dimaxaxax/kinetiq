@@ -1070,21 +1070,22 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 .pricebar .pb-go{min-width:80px;min-height:48px;padding:12px 18px}
 .bars{bottom:calc(var(--app-safe-bottom) + 9px)}
 
-/* Three clearly separated choices. Tags span the card rather than squeezing
-   the description into the same narrow column. Text controls the row height. */
+/* Larger wheel artwork with the caption and tags in one text column.
+   Card height follows its content rather than shrinking the illustration. */
 #typelist{
-  --type-thumb:clamp(64px,calc(var(--app-room)*.1),80px);
-  --type-padding:clamp(12px,calc((var(--app-room) - 560px)*.04 + 12px),16px);
-  gap:20px;
+  --type-thumb:clamp(104px,29vw,120px);
+  gap:14px;
 }
-#typelist .typecard{padding:var(--type-padding) 16px}
-.tc-row{display:grid;grid-template-columns:var(--type-thumb) minmax(0,1fr) 30px;column-gap:12px;row-gap:12px;align-items:center}
+#typelist .typecard{padding:16px;border-radius:18px}
+.tc-row{display:grid;grid-template-columns:var(--type-thumb) minmax(0,1fr);column-gap:14px;row-gap:12px;align-items:center}
 .tc-thumb{width:var(--type-thumb);height:var(--type-thumb);margin:0}
-.tc-main{gap:6px}
-.tc-name{font-size:18px;line-height:1.2}
-.tc-short{font-size:13.5px;line-height:1.4}
-.tc-tags{grid-column:1/-1;gap:6px;margin-top:0}
-.tc-tag{font-size:11px;line-height:1.35;letter-spacing:.01em;padding:3px 8px}
+.tc-main{gap:8px;align-self:center}
+.tc-name{font-size:clamp(18px,5vw,21px);line-height:1.2;padding-right:22px}
+.tc-short{font-size:14px;line-height:1.45}
+#typelist .opt-tick{position:absolute;top:12px;right:12px;width:24px;height:24px}
+#typelist .opt.selected .opt-tick i{width:24px;height:24px}
+.tc-tags{gap:5px;margin-top:2px}
+.tc-tag{font-family:var(--font);font-size:11px;line-height:1.35;letter-spacing:0;padding:3px 8px}
 .tc-extra-desc{font-size:14px}
 
 /* Options are a comfortably scrolling list, not a fit-to-screen grid.
@@ -1120,32 +1121,41 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 .ref-btn.rv+.ref-btn.rv{margin-top:0}
 .ref-chosen{margin-top:12px;padding:11px 13px}
 
-/* Summary: no empty hero for own artwork, no hidden inclusions on short screens. */
-.res-card{padding-bottom:calc(var(--app-safe-bottom) + 24px)}
-.res-card .headline{font-size:22px;margin-bottom:6px}
+/* Summary: product, specifications and price share the same column edges.
+   The footer stays outside the scroll area; every inclusion remains visible. */
+.res-card{padding-bottom:14px}
+.res-card .headline{font-size:24px;margin-bottom:12px}
+.res-card #result{min-width:0}
 .res-wrap{margin-top:0}
-.res-compact-card{margin-top:4px;border-radius:18px}
-.res-compact-top{min-height:0;padding:10px 12px 6px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:4px 8px}
-.res-mini-chip{position:static;min-height:26px;padding:3px 9px;max-width:100%;font-size:10.5px;letter-spacing:.03em}
-.res-mini-chip.left{justify-self:start}
-.res-mini-chip.right{justify-self:end}
-.res-compact-canvas{grid-column:1/-1;width:clamp(100px,calc(var(--app-room)*.16),136px);height:auto;aspect-ratio:1;margin:0 auto}
-.res-compact-top.no-wheel{min-height:44px}
-.res-compact-body{padding:2px 12px 12px}
-.res-compact-name{font-size:18px;line-height:1.2}
-.res-compact-sub{font-size:14px;line-height:1.3;margin-top:3px}
-.res-compact-note{margin-top:7px;font-size:13px;line-height:1.4}
-.res-optbox{margin-top:8px;padding-top:6px}
-.res-optline{gap:10px;padding:4px 0;font-size:13px;line-height:1.35}
-.res-card .res-total.compact{flex-direction:row;align-items:center;justify-content:space-between;gap:8px;padding:10px 0 0;margin-top:8px}
-.res-card .res-total.compact .k{max-width:95px;font-size:10px;letter-spacing:.08em}
-.res-card .res-total.compact .v{font-size:28px;line-height:1.1;white-space:nowrap}
-.res-incl-card{margin-top:10px;padding:10px 12px;border-radius:14px}
-.res-incl-card .ttl{margin-bottom:6px;font-size:13px;grid-column:1/-1}
-.res-card .res-incl-card .incl-row{display:block;font-size:13px;line-height:1.35;padding:3px 0 3px 13px}
-.res-card .res-incl-card .incl-row::before{top:11px;width:6px}
-.res-rate-compact{margin-top:8px;font-size:12px;line-height:1.4}
-.res-card .res-compact-cta{position:relative;margin-top:12px;min-height:48px;padding:12px}
+.res-compact-card{margin-top:0;border-radius:18px}
+.res-compact-top{min-height:0;padding:16px;display:grid;grid-template-columns:clamp(104px,30vw,136px) minmax(0,1fr);align-items:center;gap:16px;background:radial-gradient(ellipse at 22% 50%,rgba(176,141,87,.08),transparent 65%)}
+.res-compact-canvas{width:100%;height:auto;aspect-ratio:1;margin:0;grid-column:auto}
+.res-product-copy{min-width:0}
+.res-compact-name{font-size:20px;line-height:1.2;text-align:left;margin:0;overflow-wrap:anywhere}
+.res-compact-sub{font-size:14px;line-height:1.4;text-align:left;margin-top:6px;min-height:0;overflow-wrap:anywhere}
+.res-compact-top.no-wheel{grid-template-columns:minmax(0,1fr);min-height:0}
+.res-compact-note{margin-top:8px;padding:0;font-size:13px;line-height:1.5;text-align:left}
+.res-compact-body{padding:0 16px 16px}
+.res-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0}
+.res-spec-grid>div{min-width:0;padding:11px 0}
+.res-spec-grid>div+div{padding-left:16px;border-left:1px solid var(--line)}
+.res-spec-grid dt{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
+.res-spec-grid dd{font-size:15px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
+.res-optbox{margin-top:0;padding-top:7px;border-top:0}
+.res-optline{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:14px;padding:7px 0;font-size:13px;line-height:1.4}
+.res-card .res-total.compact{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;gap:14px;padding:14px 0 0;margin-top:0;border-top:0}
+.res-optbox+.res-total.compact{border-top:1px solid var(--line);margin-top:7px}
+.res-card .res-total.compact .k{max-width:105px;font-size:10px;letter-spacing:.07em;line-height:1.5}
+.res-card .res-total.compact .v{font-size:clamp(26px,7.5vw,32px);line-height:1.1;white-space:nowrap;text-align:right;text-shadow:none}
+.res-card .res-total.compact::after{height:1px;background:var(--accent);opacity:.6;animation:none}
+.res-incl-card{display:block;margin-top:12px;padding:0;border-radius:16px;overflow:hidden}
+.res-incl-card .ttl{margin:0;padding:12px 16px;font-size:14px;line-height:1.3;border-bottom:1px solid var(--line)}
+.res-incl-list{display:grid;grid-template-columns:minmax(0,1fr)}
+.res-card .res-incl-card .incl-row{display:block;min-width:0;font-size:12.5px;line-height:1.4;padding:10px 12px 10px 28px}
+.res-card .res-incl-card .incl-row+.incl-row{border-top:1px solid var(--line)}
+.res-card .res-incl-card .incl-row::before{left:13px;top:16px;width:6px;height:1.5px}
+.res-rate-compact{margin-top:10px;padding:0;font-size:11.5px;line-height:1.45}
+#navbar-result .nav-go{font-size:15px;letter-spacing:0}
 
 /* Secondary views share the same safe areas and readable touch controls. */
 .subview,.menu{height:var(--app-height)}
@@ -1167,19 +1177,26 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
 
 @media(min-width:360px){
-  .res-incl-card{display:grid;grid-template-columns:1fr 1fr;column-gap:14px;row-gap:1px}
+  .res-incl-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .res-card .res-incl-card .incl-row:nth-child(2){border-top:0}
+  .res-card .res-incl-card .incl-row:nth-child(even){border-left:1px solid var(--line)}
+  .res-card .res-incl-card .incl-row:last-child{grid-column:1/-1}
 }
 @media(min-width:420px){
   .disk-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
 @media(max-width:359px){
-  #typelist{--type-thumb:60px;gap:16px}
+  #typelist{--type-thumb:88px;gap:12px}
   #typelist .typecard{padding-left:12px;padding-right:12px}
-  .tc-row{column-gap:8px;row-gap:10px}
-  .tc-name{font-size:16px}
+  .tc-row{column-gap:10px;row-gap:10px}
+  .tc-name{font-size:18px;padding-right:18px}
   .tc-short{font-size:13px}
   .tc-tag{font-size:10.5px;padding:3px 6px}
   .tc-tags{gap:4px}
+  .res-compact-top{gap:12px;padding:14px}
+  .res-compact-body{padding:0 14px 14px}
+  .res-compact-name{font-size:18px}
+  .res-spec-grid>div+div{padding-left:12px}
   #optlist .opt{padding:16px}
   .pricebar .pb-val{font-size:24px}
   .pricebar .pb-val.muted{font-size:13px}
@@ -1278,7 +1295,7 @@ button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
 </section>
 
   <!-- 1 TYPE -->
-  <section class="card">
+  <section class="card" id="card-type">
     <div class="card-solid"></div>
     <div class="card-in">
       <h1 class="headline">Тип диска</h1>
@@ -1346,12 +1363,14 @@ button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
   </section>
 
   <!-- 5 RESULT -->
-  <section class="card">
+  <section class="card" id="card-result">
     <div class="card-solid"></div>
     <div class="card-in res-card">
       <h1 class="headline">Ваш комплект</h1>
       <div id="result"></div>
-      
+    </div>
+    <div class="navbar" id="navbar-result">
+      <button class="nav-go off" id="result-cta" type="button" onclick="sendOrder()" disabled>Связаться с менеджером</button>
     </div>
   </section>
 
@@ -4226,9 +4245,9 @@ function renderTypes(){
         <div class="tc-main">
           <div class="tc-name">${t.name}</div>
           <div class="tc-short">${t.short}</div>
+          <div class="tc-tags">${t.tags.map(tag=>`<span class="tc-tag">${tag}</span>`).join('')}</div>
         </div>
         <div class="opt-tick"><i><img src="${CAP}" alt=""></i></div>
-        <div class="tc-tags">${t.tags.map(tag=>`<span class="tc-tag">${tag}</span>`).join('')}</div>
       </div>
       ${t.kind==='special'?`<div class="tc-extra"><div class="tce-in"><div class="tc-extra-desc">${t.desc}</div><a class="cta" style="margin-top:0" href="https://t.me/Kinetiq_wheels" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M21.8 4.2 2.9 11.5c-.9.4-.9 1.6 0 1.9l4.7 1.5 1.8 5.6c.2.7 1.1.9 1.6.3l2.6-2.6 4.7 3.5c.6.4 1.5.1 1.7-.6L23.9 5.4c.2-.9-.7-1.6-1.5-1.2z"/></svg>Написать менеджеру</a></div></div>`:''}
     </div>`).join('');
@@ -5037,6 +5056,8 @@ $('#go-size').onclick=()=>{if(S.diam){hap('light');goCard(S.type==='monoblock'?3
 /* RESULT */
 function buildResult(){
   const pd=perDisc();const root=$('#result');
+  const cta=$('#result-cta'),canSubmit=pd!=null&&validateOrder();
+  cta.disabled=!canSubmit;cta.classList.toggle('off',!canSubmit);
   if(pd==null){root.innerHTML='<p class="sub" style="margin-top:10px">Вернитесь и завершите выбор типа и размера, чтобы увидеть стоимость.</p>';return;}
   const dlabel=S.diam.includes('+')?S.diam.split('+').map(x=>'R'+x).join(' + '):'R'+S.diam;
   const colName=(COLORS.find(x=>x.id===S.color)||{}).name||'';
@@ -5049,31 +5070,33 @@ function buildResult(){
       ${validateOrder()?'':`<div class="res-row" style="color:var(--accent-2)"><span class="k">Не заполнено</span><span class="v" style="font-size:13px">${missingList().join(', ')}</span></div>`}
       <div class="res-compact-card">
         <div class="res-compact-top ${S.refChoice==='collection'&&S.disk?'has-wheel':'no-wheel'}">
-          <span class="res-mini-chip left">${dlabel}</span>
-          <span class="res-mini-chip right">${typeName(S.type)}</span>
           ${S.refChoice==='collection'&&S.disk?`<canvas id="res-canvas" class="res-compact-canvas" width="920" height="920"></canvas>`:''}
+          <div class="res-product-copy">
+            <div class="res-compact-name">${designTitle}</div>
+            <div class="res-compact-sub ${S.refChoice==='own'?'muted':''}">${designSub}</div>
+            ${S.refChoice==='own'?`<div class="res-compact-note">После заявки менеджеру можно отправить фото, рисунок или 3D-модель — адаптируем дизайн под ваш автомобиль.</div>`:''}
+          </div>
         </div>
         <div class="res-compact-body">
-          <div class="res-compact-name">${designTitle}</div>
-          <div class="res-compact-sub ${S.refChoice==='own'?'muted':''}">${designSub}</div>
-          ${S.refChoice==='own'?`<div class="res-compact-note">После заявки менеджеру можно отправить фото, рисунок или 3D-модель — адаптируем дизайн под ваш автомобиль.</div>`:''}
+          <dl class="res-spec-grid">
+            <div><dt>Тип диска</dt><dd>${typeName(S.type)}</dd></div>
+            <div><dt>Диаметр</dt><dd>${dlabel}</dd></div>
+          </dl>
           ${hasOpts?`<div class="res-optbox">${optRows}</div>`:''}
           <div class="res-total compact"><span class="k">Итого за комплект</span><span class="v">${fmt(totalRub())}</span></div>
         </div>
       </div>
       <div class="res-incl-card">
         <div class="ttl">Включено в стоимость</div>
-        <div class="incl-row">Любой дизайн дисков</div>
-        <div class="incl-row">Любые параметры под ваш автомобиль</div>
-        <div class="incl-row">3D-рендер до производства</div>
-        <div class="incl-row">Доставка по Москве и до ТК</div>
-        <div class="incl-row">Гарантия 5 лет</div>
+        <div class="res-incl-list">
+          <div class="incl-row">Любой дизайн дисков</div>
+          <div class="incl-row">Любые параметры под ваш автомобиль</div>
+          <div class="incl-row">3D-рендер до производства</div>
+          <div class="incl-row">Доставка по Москве и до ТК</div>
+          <div class="incl-row">Гарантия 5 лет</div>
+        </div>
       </div>
       <div class="res-rate-compact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg><span>Стоимость обновляется ежедневно по актуальному курсу валют.</span></div>
-      <button class="cta res-compact-cta ${validateOrder()?'':'off'}" onclick="sendOrder()">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 4.2 2.9 11.5c-.9.4-.9 1.6 0 1.9l4.7 1.5 1.8 5.6c.2.7 1.1.9 1.6.3l2.6-2.6 4.7 3.5c.6.4 1.5.1 1.7-.6L23.9 5.4c.2-.9-.7-1.6-1.5-1.2z"/></svg>
-        Связаться с менеджером
-      </button>
     </div>`;
   /* «Включено» всегда раскрыто */
   if(S.refChoice==='collection'&&S.disk){
