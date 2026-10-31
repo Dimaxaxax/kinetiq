@@ -1,0 +1,2875 @@
+{
+  "date": "2026-10-31",
+  "baseline_commit": "4cdd2df63e0bde0da4f9cf269430519318c11906",
+  "baseline_sha256": "3aa02f1f9ad6224b3e52f18f8d2bb195f92580b0b82ccbd85d807daf69573cbf",
+  "validation": {
+    "models": 231,
+    "configurations": 1159,
+    "alternatives": 1112,
+    "validated_axles": 4542,
+    "bmw_models": 51,
+    "bmw_configurations": 402,
+    "bmw_explicit_reference_pairs": 628,
+    "bmw_reviewed_prose_alternatives": 56,
+    "guide_only_change": true,
+    "sha256": "08ba742bb783648b2c3e381df462b213f9860d8994f02c3aed47fb37a69b3828"
+  },
+  "browser_validation": {
+    "errors": [],
+    "layout": [
+      {
+        "width": 320,
+        "models": 231,
+        "cells": 28417,
+        "failures": []
+      },
+      {
+        "width": 375,
+        "models": 231,
+        "cells": 28417,
+        "failures": []
+      },
+      {
+        "width": 390,
+        "models": 231,
+        "cells": 28417,
+        "failures": []
+      },
+      {
+        "width": 430,
+        "models": 12,
+        "cells": 2369,
+        "failures": []
+      },
+      {
+        "width": 768,
+        "models": 12,
+        "cells": 2369,
+        "failures": []
+      },
+      {
+        "width": 1280,
+        "models": 12,
+        "cells": 2369,
+        "failures": []
+      }
+    ]
+  },
+  "changes": [
+    {
+      "model": "13:39",
+      "field": "bolt",
+      "before": "5×112",
+      "after": "5×130",
+      "reason": "Cayenne 9YA: APEX fitment file and Porsche mounting table."
+    },
+    {
+      "model": "13:39",
+      "field": "bore",
+      "before": "66.6 мм",
+      "after": "71.6 мм",
+      "reason": "Cayenne 9YA, not Macan 95B."
+    },
+    {
+      "model": "8:7",
+      "field": "bore",
+      "before": "63.4 мм",
+      "after": "70.5 мм",
+      "reason": "Explorer VI: APEX and Eibach."
+    },
+    {
+      "model": "5:7",
+      "field": "bore",
+      "before": "66.6 мм",
+      "after": "57.1 мм",
+      "reason": "R8 Gen 1 source commonFeatures."
+    },
+    {
+      "model": "5:8",
+      "field": "bore",
+      "before": "66.6 мм",
+      "after": "Перед 57.1 / зад 66.6 мм",
+      "reason": "R8 Gen 2 has different front and rear hubs."
+    },
+    {
+      "model": "4:0",
+      "field": "thread",
+      "before": "M12×1.5",
+      "after": "M14×2.0",
+      "reason": "Vantage VH2: supplied APEX guide and SCC hardware catalogue."
+    },
+    {
+      "model": "15:0",
+      "field": "bolt",
+      "before": "5×114.3",
+      "after": "5×100",
+      "reason": "APEX separate 2004 STI guide; market explicitly scoped."
+    },
+    {
+      "model": "15:6",
+      "field": "bolt",
+      "before": "5×114.3",
+      "after": "5×100",
+      "reason": "GR WRX is not GR STI."
+    },
+    {
+      "model": "1:10",
+      "field": "bore",
+      "before": "72.56 мм",
+      "after": "66.9 мм",
+      "reason": "C8 hub bore: Eibach and Forgelite manufacturer fitment data; APEX 67.1 is not blindly used as hub size."
+    },
+    {
+      "model": "1:11",
+      "field": "bore",
+      "before": "72.56 мм",
+      "after": "66.9 мм",
+      "reason": "C8 hub bore: Eibach and Forgelite manufacturer fitment data; APEX 67.1 is not blindly used as hub size."
+    },
+    {
+      "model": "1:13",
+      "field": "bore",
+      "before": "72.56 мм",
+      "after": "66.9 мм",
+      "reason": "C8 hub bore: Eibach and Forgelite manufacturer fitment data; APEX 67.1 is not blindly used as hub size."
+    },
+    {
+      "model": "1:13",
+      "field": "bolt",
+      "before": "5×120",
+      "after": "Перед 5×120 / зад 5×130",
+      "reason": "C8 ZR1 uses a different rear PCD."
+    },
+    {
+      "model": "1:3",
+      "field": "sharedNote",
+      "reason": "Removed erroneous centerlock note from Camaro ZL1 1LE."
+    },
+    {
+      "model": "13:11",
+      "field": "bolt",
+      "before": "Центральная гайка (centerlock)",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:11",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:11",
+      "field": "thread",
+      "before": "–",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "model": "13:12",
+      "field": "bolt",
+      "before": "Центральная гайка (centerlock)",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:12",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:12",
+      "field": "thread",
+      "before": "–",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "model": "13:25",
+      "field": "bolt",
+      "before": "5×130",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:25",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:25",
+      "field": "thread",
+      "before": "M14×1.5",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "model": "13:26",
+      "field": "bolt",
+      "before": "5×130",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:26",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:26",
+      "field": "thread",
+      "before": "M14×1.5",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "model": "13:33",
+      "field": "bolt",
+      "before": "5×130",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:33",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:33",
+      "field": "thread",
+      "before": "M14×1.5",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "model": "13:35",
+      "field": "bolt",
+      "before": "5×130",
+      "after": "Centerlock",
+      "reason": "Porsche centerlock variant: not 5×130."
+    },
+    {
+      "model": "13:35",
+      "field": "bore",
+      "before": "71.6 мм",
+      "after": "101 мм · centerlock",
+      "reason": "Porsche centerlock interface, not a conventional five-lug centre bore."
+    },
+    {
+      "model": "13:35",
+      "field": "thread",
+      "before": "M14×1.5",
+      "after": "–",
+      "reason": "Ordinary wheel bolt thread does not apply to centerlock."
+    },
+    {
+      "id": "0:0:0:0",
+      "field": "extra",
+      "before": "Штатные размеры шин. Устанавливается без доработок.",
+      "after": "Штатные размеры шин. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "0:0:0:1",
+      "field": "extra",
+      "before": "Штатные размеры шин. Устанавливается без доработок.",
+      "after": "Штатные размеры шин. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "0:1:0:0",
+      "field": "extra",
+      "before": "Штатные размеры шин. Устанавливается без доработок.",
+      "after": "Штатные размеры шин. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "0:1:0:1",
+      "field": "extra",
+      "before": "Штатные размеры шин. Устанавливается без доработок.",
+      "after": "Штатные размеры шин. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "9:3:0:1",
+      "field": "extra",
+      "before": "Обычно устанавливается без доработок, возможен небольшой развал.",
+      "after": "Обычно Учитывайте условия установки по осям., возможен небольшой развал.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "9:4:0:1",
+      "field": "extra",
+      "before": "Обычно устанавливается без доработок, возможен небольшой развал.",
+      "after": "Обычно Учитывайте условия установки по осям., возможен небольшой развал.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "11:0:0:0",
+      "field": "extra",
+      "before": "Обычно устанавливается без доработок, возможен небольшой развал.",
+      "after": "Обычно Учитывайте условия установки по осям., возможен небольшой развал.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "11:0:0:1",
+      "field": "extra",
+      "before": "Обычно устанавливается без доработок, возможен небольшой развал.",
+      "after": "Обычно Учитывайте условия установки по осям., возможен небольшой развал.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "13:17:0:0",
+      "field": "extra",
+      "before": "Требуется задняя проставка 20 мм. Устанавливается без доработок.",
+      "after": "Требуется задняя проставка 20 мм. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "13:21:0:0",
+      "field": "extra",
+      "before": "Заводской размер C4. Требуется задняя проставка 20 мм. Устанавливается без доработок.",
+      "after": "Заводской размер C4. Требуется задняя проставка 20 мм. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "13:25:0:0",
+      "field": "extra",
+      "before": "Обычно устанавливается без доработок; желателен развал от −2° спереди. Требуется специальный болт нижнего заднего рычага.",
+      "after": "Обычно Учитывайте условия установки по осям.; желателен развал от −2° спереди. Требуется специальный болт нижнего заднего рычага.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "13:30:1:0",
+      "field": "extra",
+      "before": "Устанавливается без доработок; для широких шин возможны развальные опоры.",
+      "after": "Учитывайте условия установки по осям.; для широких шин возможны развальные опоры.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "21:0:0:0",
+      "field": "extra",
+      "before": "Требуются передние проставки минимум 5 мм для достаточного зазора. Устанавливается без доработок.",
+      "after": "Требуются передние проставки минимум 5 мм для достаточного зазора. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "21:0:0:1",
+      "field": "extra",
+      "before": "Требуются передние проставки 13 мм для достаточного зазора. Устанавливается без доработок.",
+      "after": "Требуются передние проставки 13 мм для достаточного зазора. Учитывайте условия установки по осям.",
+      "reason": "Unconditional guarantee conflicted with axle conditions."
+    },
+    {
+      "id": "2:21:1:0:alt:2",
+      "reason": "Duplicate wheel/tyre alternative with identical conditions merged."
+    },
+    {
+      "id": "2:21:1:0:alt:3",
+      "reason": "Duplicate wheel/tyre alternative with identical conditions merged."
+    },
+    {
+      "id": "2:21:2:0:alt:1",
+      "reason": "Duplicate wheel/tyre alternative with identical conditions merged."
+    }
+  ],
+  "retired": [
+    {
+      "id": "2:5:3:0",
+      "model": "M3 E46",
+      "data": {
+        "label": "R18",
+        "front": {
+          "size": "18×9.5",
+          "et": "ET22",
+          "tire": "265/35-18",
+          "status": "camber",
+          "note": "Нужен развал спереди."
+        },
+        "rear": {
+          "size": "18×10",
+          "et": "ET25",
+          "tire": "275/35-18"
+        },
+        "status": "info",
+        "extra": "Проставки не требуются."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:5:3:1",
+      "model": "M3 E46",
+      "data": {
+        "label": "R18 (макс.)",
+        "front": {
+          "size": "18×10",
+          "et": "ET25",
+          "tire": "275/35-18",
+          "status": "camber",
+          "note": "Нужен развал спереди. На некоторых койловерах могут потребоваться проставки 5 мм или больше спереди."
+        },
+        "rear": {
+          "size": "18×11",
+          "et": "ET44",
+          "tire": "295/30-18",
+          "status": "fender",
+          "note": "Нужны проставки 20 мм или больше сзади, а также раскатка или подрезка задних арок."
+        },
+        "status": "info"
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:5:3:3",
+      "model": "M3 E46",
+      "data": {
+        "label": "18×11 ET44 равная ширина",
+        "front": {
+          "size": "18×11",
+          "et": "ET44",
+          "tire": "295/30-18",
+          "status": "fender",
+          "note": "Нужны проставки 20 мм или больше и развал."
+        },
+        "rear": {
+          "size": "18×11",
+          "et": "ET44",
+          "tire": "295/30-18",
+          "status": "fender",
+          "note": "Нужны проставки 20 мм или больше и развал."
+        },
+        "status": "info",
+        "extra": "Требуются расширители арок или расширенный кузов – нужна раскатка или подрезка арок спереди и сзади."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:21:2:1:alt:0",
+      "model": "BMW alternative",
+      "data": {
+        "status": "spacer_maybe",
+        "note": "Рекомендуется проставка 3 мм сзади.",
+        "_id": "2:21:2:1:alt:0",
+        "type": "tire",
+        "front": {
+          "size": "19×11",
+          "et": "ET40",
+          "tire": "305/30-19"
+        },
+        "rear": {
+          "size": "19×11",
+          "et": "ET40",
+          "tire": "305/30-19"
+        },
+        "label": "Другие шины"
+      },
+      "reason": "Source repeats Front Tire Size twice for 305/30R19. Rear clearance is discussed, but the complete corrected pair is not explicit."
+    },
+    {
+      "id": "2:21:2:1:alt:1",
+      "model": "BMW alternative",
+      "data": {
+        "status": "spacer_maybe",
+        "note": "Рекомендуются проставки 3 мм сзади.",
+        "_id": "2:21:2:1:alt:1",
+        "type": "tire",
+        "front": {
+          "size": "19×11",
+          "et": "ET40",
+          "tire": "305/30-19"
+        },
+        "rear": {
+          "size": "19×11",
+          "et": "ET40",
+          "tire": "305/30-19"
+        },
+        "label": "Другие шины"
+      },
+      "reason": "Duplicate of the same ambiguous 305/30R19 source alternative."
+    },
+    {
+      "id": "2:30:0:8",
+      "model": "3 Series E90/E91/E92/E93",
+      "data": {
+        "front": {
+          "size": "18×8.5",
+          "et": "ET35",
+          "tire": "235/40-18"
+        },
+        "rear": {
+          "size": "18×9.5",
+          "et": "ET43",
+          "tire": "265/35-18"
+        },
+        "status": "ok",
+        "note": "Штатная посадка. Спереди допускается 245/40-18. Сзади 275/35-18 – в зависимости от высоты подвески может понадобиться раскатка арок и/или развал. xDrive LCI (седан/универсал): только 225/40-18 спереди и 255/35-18 сзади."
+      },
+      "reason": "LCI-specific setup belongs in the separate E90/E91 LCI record."
+    },
+    {
+      "id": "2:30:2:2",
+      "model": "3 Series E90/E91/E92/E93",
+      "data": {
+        "front": {
+          "size": "18×9",
+          "et": "ET31",
+          "tire": "255/35-18"
+        },
+        "rear": {
+          "size": "18×9.5",
+          "et": "ET43",
+          "tire": "265/35-18"
+        },
+        "status": "conditional",
+        "note": "Штатная посадка. На версиях с внешним маслокулером в бампере (например, 335is и поздние N54) возможно лёгкое касание пластиковых воздуховодов или подкрылка при полном повороте – решается минимальной подрезкой. Сзади допускается 275/35-18 – с раскаткой арок и/или развалом. xDrive: только 235/40-18 спереди и 265/35-18 сзади."
+      },
+      "reason": "LCI-specific setup belongs in the separate E90/E91 LCI record."
+    },
+    {
+      "id": "2:34:0:3:alt:0",
+      "model": "BMW alternative",
+      "data": {
+        "status": "ok",
+        "note": "Штатный размер, устанавливается без доработок.",
+        "_id": "2:34:0:3:alt:0",
+        "type": "tire",
+        "front": {
+          "size": "18×8.5",
+          "et": "ET38",
+          "tire": "225/45-18"
+        },
+        "rear": {
+          "size": "18×9.0",
+          "et": "ET42",
+          "tire": "225/45-18"
+        },
+        "label": "Другие шины"
+      },
+      "reason": "225/45R18 was incorrectly repeated on both axles; source xDrive pair is 225/45R18 front and 255/40R18 rear, already provided separately."
+    },
+    {
+      "id": "2:45:1:0",
+      "model": "X5 G05",
+      "data": {
+        "label": "22\" – вариант 1",
+        "front": {
+          "size": "22×9.5",
+          "et": "ET20",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.0",
+          "et": "ET30",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:45:1:1",
+      "model": "X5 G05",
+      "data": {
+        "label": "22\" – вариант 2",
+        "front": {
+          "size": "22×10.0",
+          "et": "ET25",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.5",
+          "et": "ET35",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:45:2:0",
+      "model": "X5 G05",
+      "data": {
+        "label": "22\" – максимально широкая",
+        "front": {
+          "size": "22×10.5",
+          "et": "ET25",
+          "tire": "285/35-22"
+        },
+        "rear": {
+          "size": "22×12.0",
+          "et": "ET30",
+          "tire": "325/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Максимально широкая резина."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:46:1:0",
+      "model": "X6 G06",
+      "data": {
+        "label": "22\" – вариант 1",
+        "front": {
+          "size": "22×9.5",
+          "et": "ET20",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.0",
+          "et": "ET30",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:46:1:1",
+      "model": "X6 G06",
+      "data": {
+        "label": "22\" – вариант 2",
+        "front": {
+          "size": "22×10.0",
+          "et": "ET25",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.5",
+          "et": "ET35",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "id": "2:46:2:0",
+      "model": "X6 G06",
+      "data": {
+        "label": "22\" – максимально широкая",
+        "front": {
+          "size": "22×10.5",
+          "et": "ET25",
+          "tire": "285/35-22"
+        },
+        "rear": {
+          "size": "22×12.0",
+          "et": "ET30",
+          "tire": "325/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Максимально широкая резина."
+      },
+      "reason": "В предоставленном руководстве не подтверждено именно это сочетание дисков и шин."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "Вариант 1 – 20\"",
+        "front": {
+          "size": "20×9.0",
+          "et": "ET25",
+          "tire": "275/45-20"
+        },
+        "rear": {
+          "size": "20×10.5",
+          "et": "ET36",
+          "tire": "305/40-20"
+        },
+        "status": "ok",
+        "extra": "Штатные размеры шин, ширина дисков как у завода. Спереди можно поставить 20×9.5 ET22 – более агрессивный вариант."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "Вариант 2 – 21\"",
+        "front": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "275/40-21"
+        },
+        "rear": {
+          "size": "21×10.5",
+          "et": "ET28",
+          "tire": "315/35-21"
+        },
+        "status": "ok",
+        "alts": [
+          {
+            "tire": "сзади диск 21×10.5 ET36",
+            "status": "ok",
+            "note": "Менее агрессивный задний вариант с лучшей доступностью резины."
+          }
+        ]
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "Вариант 3 – 20\" равная ширина",
+        "front": {
+          "size": "20×9.5",
+          "et": "ET22",
+          "tire": "275/45-20"
+        },
+        "rear": {
+          "size": "20×9.5",
+          "et": "ET22",
+          "tire": "275/45-20"
+        },
+        "status": "ok",
+        "extra": "Заводской размер передней резины. Самый большой выбор моделей шин из всех вариантов."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "Вариант 4 – 21\" равная ширина",
+        "front": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "275/40-21"
+        },
+        "rear": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "275/40-21"
+        },
+        "status": "ok",
+        "extra": "Большой выбор шин в этом размере."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "22\" – вариант 1",
+        "front": {
+          "size": "22×9.5",
+          "et": "ET20",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.0",
+          "et": "ET30",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "22\" – вариант 2",
+        "front": {
+          "size": "22×10.0",
+          "et": "ET25",
+          "tire": "275/35-22"
+        },
+        "rear": {
+          "size": "22×11.5",
+          "et": "ET35",
+          "tire": "315/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Альтернативно более широкая резина: спереди 275/40-22, сзади 315/35-22."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X7 G07",
+      "data": {
+        "label": "22\" – максимально широкая",
+        "front": {
+          "size": "22×10.5",
+          "et": "ET25",
+          "tire": "285/35-22"
+        },
+        "rear": {
+          "size": "22×12.0",
+          "et": "ET30",
+          "tire": "325/30-22"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Максимально широкая резина."
+      },
+      "reason": "Скопировано с G05; заменено собственной заводской базой G07."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "20×9",
+          "et": "ET25",
+          "tire": "245/45-20"
+        },
+        "rear": {
+          "size": "20×9",
+          "et": "ET25",
+          "tire": "245/45-20"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатный размер шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "20×9.5",
+          "et": "ET22",
+          "tire": "245/45-20"
+        },
+        "rear": {
+          "size": "20×9.5",
+          "et": "ET22",
+          "tire": "245/45-20"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатный размер шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "20×9.5",
+          "et": "ET22",
+          "tire": "245/45-20"
+        },
+        "rear": {
+          "size": "20×10.5",
+          "et": "ET36",
+          "tire": "275/40-20"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатные размеры шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "21×9",
+          "et": "ET25",
+          "tire": "255/40-21"
+        },
+        "rear": {
+          "size": "21×9",
+          "et": "ET25",
+          "tire": "255/40-21"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатный размер шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "255/40-21"
+        },
+        "rear": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "255/40-21"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатный размер шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "model": "X3 G45",
+      "data": {
+        "front": {
+          "size": "21×9.5",
+          "et": "ET22",
+          "tire": "255/40-21"
+        },
+        "rear": {
+          "size": "21×10.5",
+          "et": "ET36",
+          "tire": "285/35-21"
+        },
+        "status": "ok",
+        "extra": "Устанавливается без доработок. Штатные размеры шин."
+      },
+      "reason": "Заменено отдельной базой G45; размеры G01 не перенесены."
+    },
+    {
+      "id": "13:25:2:0",
+      "model": "991 GT2 RS / GT3 RS",
+      "data": {
+        "front": {
+          "size": "20×9",
+          "et": "ET47",
+          "tire": "245/35-20"
+        },
+        "rear": {
+          "size": "20×12",
+          "et": "ET47",
+          "tire": "305/30-20"
+        },
+        "status": "ok",
+        "note": "Штатная посадка. Заводские размеры GT3."
+      },
+      "reason": "OEM+ configuration belongs to a different GT3 scope, absent from RS guide."
+    }
+  ],
+  "prose_approvals": {
+    "2:4:3:1:alt:0": {
+      "source": 41,
+      "card": 16,
+      "legacy": "275/35-18"
+    },
+    "2:4:3:2:alt:0": {
+      "source": 41,
+      "card": 17,
+      "legacy": "265/35-18"
+    },
+    "2:6:1:0:alt:0": {
+      "source": 43,
+      "card": 4,
+      "legacy": "перед 275/35-18"
+    },
+    "2:6:1:0:alt:1": {
+      "source": 43,
+      "card": 4,
+      "legacy": "зад 295/35-18"
+    },
+    "2:17:0:1:alt:0": {
+      "source": 136,
+      "card": 1,
+      "legacy": "зад диск 18×9.5 ET22, резина 265/35-18"
+    },
+    "2:17:2:0:alt:0": {
+      "source": 136,
+      "card": 5,
+      "legacy": "зад 285/35-18"
+    },
+    "2:18:0:0:alt:0": {
+      "source": 54,
+      "card": 0,
+      "legacy": "зад диск 17×10 ET25"
+    },
+    "2:18:0:1:alt:0": {
+      "source": 54,
+      "card": 1,
+      "legacy": "зад 275/35-18"
+    },
+    "2:18:0:2:alt:0": {
+      "source": 54,
+      "card": 2,
+      "legacy": "зад 275/30-19"
+    },
+    "2:18:1:0:alt:0": {
+      "source": 54,
+      "card": 3,
+      "legacy": "перед 245/40-17 / зад 275/40-17"
+    },
+    "2:19:0:0:alt:0": {
+      "source": 71,
+      "card": 0,
+      "legacy": "235/45-17"
+    },
+    "2:22:0:6:alt:0": {
+      "source": 55,
+      "card": 6,
+      "legacy": "зад 275/35-18"
+    },
+    "2:22:0:7:alt:0": {
+      "source": 55,
+      "card": 7,
+      "legacy": "зад 275/35-18"
+    },
+    "2:23:0:7:alt:0": {
+      "source": 56,
+      "card": 7,
+      "legacy": "зад 265/35-18"
+    },
+    "2:23:0:8:alt:0": {
+      "source": 56,
+      "card": 8,
+      "legacy": "зад 265/35-18"
+    },
+    "2:24:0:7:alt:0": {
+      "source": 57,
+      "card": 7,
+      "legacy": "зад 265/35-18"
+    },
+    "2:24:0:8:alt:0": {
+      "source": 57,
+      "card": 8,
+      "legacy": "зад 265/35-18"
+    },
+    "2:26:0:0:alt:0": {
+      "source": 59,
+      "card": 0,
+      "legacy": "235/40-17"
+    },
+    "2:26:1:0:alt:0": {
+      "source": 59,
+      "card": 1,
+      "legacy": "235/40-17"
+    },
+    "2:27:1:4:alt:0": {
+      "source": 60,
+      "card": 8,
+      "legacy": "перед 245/40-17"
+    },
+    "2:27:3:1:alt:0": {
+      "source": 60,
+      "card": 16,
+      "legacy": "275/35-18"
+    },
+    "2:27:3:2:alt:0": {
+      "source": 60,
+      "card": 17,
+      "legacy": "265/35-18"
+    },
+    "2:28:0:0:alt:0": {
+      "source": 61,
+      "card": 0,
+      "legacy": "235/45-17"
+    },
+    "2:28:0:0:alt:1": {
+      "source": 61,
+      "card": 0,
+      "legacy": "245/40-17"
+    },
+    "2:28:0:1:alt:0": {
+      "source": 61,
+      "card": 1,
+      "legacy": "245/35-18"
+    },
+    "2:28:2:2:alt:0": {
+      "source": 61,
+      "card": 8,
+      "legacy": "255/35-18"
+    },
+    "2:30:0:0:alt:0": {
+      "source": 62,
+      "card": 0,
+      "legacy": "245/40-17"
+    },
+    "2:30:0:1:alt:0": {
+      "source": 62,
+      "card": 1,
+      "legacy": "245/40-18"
+    },
+    "2:30:0:2:alt:0": {
+      "source": 62,
+      "card": 2,
+      "legacy": "245/35-19"
+    },
+    "2:30:0:4:alt:0": {
+      "source": 62,
+      "card": 4,
+      "legacy": "зад 275/40-17"
+    },
+    "2:30:0:5:alt:0": {
+      "source": 62,
+      "card": 5,
+      "legacy": "зад 275/35-18"
+    },
+    "2:30:0:6:alt:0": {
+      "source": 62,
+      "card": 6,
+      "legacy": "зад 275/35-18"
+    },
+    "2:30:0:7:alt:0": {
+      "source": 62,
+      "card": 7,
+      "legacy": "зад 275/30-19"
+    },
+    "2:30:2:0:alt:0": {
+      "source": 62,
+      "card": 13,
+      "legacy": "255/40-17"
+    },
+    "2:30:3:0:alt:0": {
+      "source": 62,
+      "card": 18,
+      "legacy": "275/40-17"
+    },
+    "2:30:3:1:alt:0": {
+      "source": 62,
+      "card": 19,
+      "legacy": "275/35-18"
+    },
+    "2:32:0:0:alt:0": {
+      "source": 63,
+      "card": 0,
+      "legacy": "245/45-17"
+    },
+    "2:32:0:1:alt:0": {
+      "source": 63,
+      "card": 1,
+      "legacy": "245/40-18"
+    },
+    "2:32:1:0:alt:0": {
+      "source": 63,
+      "card": 5,
+      "legacy": "235/45-17"
+    },
+    "2:32:1:1:alt:0": {
+      "source": 63,
+      "card": 6,
+      "legacy": "255/35-18"
+    },
+    "2:32:1:1:alt:1": {
+      "source": 63,
+      "card": 6,
+      "legacy": "255/40-18"
+    },
+    "2:32:1:2:alt:0": {
+      "source": 63,
+      "card": 7,
+      "legacy": "245/35-19"
+    },
+    "2:32:2:1:alt:0": {
+      "source": 63,
+      "card": 15,
+      "legacy": "255/40-18"
+    },
+    "2:34:0:0:alt:0": {
+      "source": 65,
+      "card": 0,
+      "legacy": "245/45-17"
+    },
+    "2:34:0:1:alt:1": {
+      "source": 65,
+      "card": 1,
+      "legacy": "245/40-18"
+    },
+    "2:34:1:0:alt:0": {
+      "source": 65,
+      "card": 5,
+      "legacy": "235/45-17"
+    },
+    "2:34:1:1:alt:0": {
+      "source": 65,
+      "card": 7,
+      "legacy": "245/35-19"
+    },
+    "2:34:2:0:alt:0": {
+      "source": 65,
+      "card": 13,
+      "legacy": "255/35-18"
+    },
+    "2:34:2:0:alt:1": {
+      "source": 65,
+      "card": 13,
+      "legacy": "255/40-18"
+    },
+    "2:34:2:2:alt:0": {
+      "source": 65,
+      "card": 15,
+      "legacy": "255/40-18"
+    },
+    "2:45:0:1:alt:0": {
+      "source": 78,
+      "card": 1,
+      "legacy": "сзади диск 21×10.5 ET36"
+    },
+    "2:46:0:1:alt:0": {
+      "source": 79,
+      "card": 1,
+      "legacy": "сзади диск 21×10.5 ET36"
+    },
+    "2:48:0:2:alt:0": {
+      "source": 137,
+      "card": 4,
+      "legacy": "перед 225/45-17 / зад 255/40-17"
+    },
+    "2:48:0:2:alt:1": {
+      "source": 137,
+      "card": 4,
+      "legacy": "перед 235/45-17 / зад 275/40-17"
+    },
+    "2:48:0:4:alt:0": {
+      "source": 137,
+      "card": 5,
+      "legacy": "перед 225/40-18 / зад 255/35-18"
+    },
+    "2:48:0:4:alt:1": {
+      "source": 137,
+      "card": 5,
+      "legacy": "перед 235/40-18 / зад 275/35-18"
+    }
+  },
+  "source_index": [
+    {
+      "source_id": 0,
+      "title": "Acura DC5 RSX Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/acura/rsx/acura-dc5-rsx-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 1
+    },
+    {
+      "source_id": 1,
+      "title": "Acura DE4 Integra Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/acura/integra/acura-de4-integra-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 2
+    },
+    {
+      "source_id": 2,
+      "title": "Acura DE5 Integra Type-S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/acura/integra-type-s/acura-de5-integra-type-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 3
+    },
+    {
+      "source_id": 3,
+      "title": "Alfa Romeo Giulia  Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/alfa-romeo/giulia/alfa-romeo-giulia-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 4
+    },
+    {
+      "source_id": 4,
+      "title": "Aston Martin V8/V12 Vantage Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/aston-martin/vantage/aston-martin-v8-v12-vantage-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 5
+    },
+    {
+      "source_id": 5,
+      "title": "Aston Martin AM6 V8 Vantage Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/aston-martin/vantage/aston-martin-am6-v8-vantage-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 6
+    },
+    {
+      "source_id": 6,
+      "title": "Audi 8V A3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a3/audi-8v-a3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 7
+    },
+    {
+      "source_id": 7,
+      "title": "Audi B8 A4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a4/audi-b8-a4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 8
+    },
+    {
+      "source_id": 8,
+      "title": "Audi B9 A4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a4/audi-b9-a4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 9
+    },
+    {
+      "source_id": 9,
+      "title": "Audi B8 A5  Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a5/audi-b8-a5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 10
+    },
+    {
+      "source_id": 10,
+      "title": "Audi B9 A5  Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a5/audi-b9-a5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 11
+    },
+    {
+      "source_id": 11,
+      "title": "Audi B10 A5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a5/audi-b10-a5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 12
+    },
+    {
+      "source_id": 12,
+      "title": "Audi C4 A6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/a6/audi-c4-a6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 13
+    },
+    {
+      "source_id": 13,
+      "title": "Audi Gen 1 R8 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/r8/audi-gen-1-r8-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 14
+    },
+    {
+      "source_id": 14,
+      "title": "Audi Gen 2 R8 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/r8/audi-gen-2-r8-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 15
+    },
+    {
+      "source_id": 15,
+      "title": "Audi 8V RS 3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-3/audi-8v-rs-3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 16
+    },
+    {
+      "source_id": 16,
+      "title": "Audi 8Y RS 3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-3/audi-8y-rs-3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 17
+    },
+    {
+      "source_id": 17,
+      "title": "Audi B5 RS 4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-4/audi-b5-rs-4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 18
+    },
+    {
+      "source_id": 18,
+      "title": "Audi B8 RS 5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-5/audi-b8-rs-5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 19
+    },
+    {
+      "source_id": 19,
+      "title": "Audi B9 RS 5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-5/audi-b9-rs-5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 20
+    },
+    {
+      "source_id": 20,
+      "title": "Audi C8 RS 6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-6/audi-c8-rs-6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 21
+    },
+    {
+      "source_id": 21,
+      "title": "Audi C8 RS 7 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/rs-7/audi-c8-rs-7-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 22
+    },
+    {
+      "source_id": 22,
+      "title": "Audi 8V S3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s3/audi-8v-s3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 23
+    },
+    {
+      "source_id": 23,
+      "title": "Audi 8Y S3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s3/audi-8y-s3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 24
+    },
+    {
+      "source_id": 24,
+      "title": "Audi B5 S4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s4/audi-b5-s4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 25
+    },
+    {
+      "source_id": 25,
+      "title": "Audi B8 S4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s4/audi-b8-s4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 26
+    },
+    {
+      "source_id": 26,
+      "title": "Audi B9 S4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s4/audi-b9-s4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 27
+    },
+    {
+      "source_id": 27,
+      "title": "Audi B8 S5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s5/audi-b8-s5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 28
+    },
+    {
+      "source_id": 28,
+      "title": "Audi B9 S5  Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s5/audi-b9-s5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 29
+    },
+    {
+      "source_id": 29,
+      "title": "Audi B10 S5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s5/audi-b10-s5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 30
+    },
+    {
+      "source_id": 30,
+      "title": "Audi C4 S6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/s6/audi-c4-s6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 31
+    },
+    {
+      "source_id": 31,
+      "title": "Audi 8J TT Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tt/audi-8j-tt-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 32
+    },
+    {
+      "source_id": 32,
+      "title": "Audi 8S TT Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tt/audi-8s-tt-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 33
+    },
+    {
+      "source_id": 33,
+      "title": "Audi 8J TTS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tts/audi-8j-tts-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 34
+    },
+    {
+      "source_id": 34,
+      "title": "Audi 8S TTS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tts/audi-8s-tts-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 35
+    },
+    {
+      "source_id": 35,
+      "title": "Audi 8J TT RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tt-rs/audi-8j-tt-rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 36
+    },
+    {
+      "source_id": 36,
+      "title": "Audi FV/8S TT RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/audi/tt-rs/audi-fv-8s-tt-rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 37
+    },
+    {
+      "source_id": 37,
+      "title": "BMW E82 1M Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/1m/bmw-e82-1m-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 38
+    },
+    {
+      "source_id": 38,
+      "title": "BMW F87 M2 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m2/bmw-f87-m2-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 39
+    },
+    {
+      "source_id": 39,
+      "title": "BMW G87 M2 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m2/bmw-g87-m2-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 40
+    },
+    {
+      "source_id": 40,
+      "title": "BMW E30 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-e30-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 41
+    },
+    {
+      "source_id": 41,
+      "title": "BMW E36 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-e36-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 42
+    },
+    {
+      "source_id": 42,
+      "title": "BMW E46 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-e46-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 43
+    },
+    {
+      "source_id": 43,
+      "title": "BMW E90 E92 E93 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-e90-e92-e93-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 44
+    },
+    {
+      "source_id": 44,
+      "title": "BMW F80 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-f80-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 45
+    },
+    {
+      "source_id": 45,
+      "title": "BMW G80 M3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m3/bmw-g80-m3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 46
+    },
+    {
+      "source_id": 46,
+      "title": "BMW F82 F83 M4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m4/bmw-f82-f83-m4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 47
+    },
+    {
+      "source_id": 47,
+      "title": "BMW G82 G83 M4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m4/bmw-g82-g83-m4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 48
+    },
+    {
+      "source_id": 48,
+      "title": "BMW E39 M5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m5/bmw-e39-m5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 49
+    },
+    {
+      "source_id": 49,
+      "title": "BMW E60 M5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m5/bmw-e60-m5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 50
+    },
+    {
+      "source_id": 50,
+      "title": "BMW F10 M5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m5/bmw-f10-m5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 51
+    },
+    {
+      "source_id": 51,
+      "title": "BMW F90 M5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m5/bmw-f90-m5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 52
+    },
+    {
+      "source_id": 52,
+      "title": "BMW E63 E64 M6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m6/bmw-e63-e64-m6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 53
+    },
+    {
+      "source_id": 53,
+      "title": "BMW F06 F12 F13 M6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/m6/bmw-f06-f12-f13-m6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 54
+    },
+    {
+      "source_id": 54,
+      "title": "BMW E85 E86 Z4 M Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z4-m/bmw-e85-e86-z4-m-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 55
+    },
+    {
+      "source_id": 55,
+      "title": "BMW E82 E88 1 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/1-series/bmw-e82-e88-1-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 56
+    },
+    {
+      "source_id": 56,
+      "title": "BMW F20 F21 1 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/1-series/bmw-f20-f21-1-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 57
+    },
+    {
+      "source_id": 57,
+      "title": "BMW F22 F23 2 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/2-series/bmw-f22-f23-2-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 58
+    },
+    {
+      "source_id": 58,
+      "title": "BMW G42 2 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/2-series/bmw-g42-2-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 59
+    },
+    {
+      "source_id": 59,
+      "title": "BMW E30 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-e30-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 60
+    },
+    {
+      "source_id": 60,
+      "title": "BMW E36 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-e36-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 61
+    },
+    {
+      "source_id": 61,
+      "title": "BMW E46 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-e46-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 62
+    },
+    {
+      "source_id": 62,
+      "title": "BMW E90 E91 E92 E93 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-e90-e91-e92-e93-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 63
+    },
+    {
+      "source_id": 63,
+      "title": "BMW F30 F31 F34 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-f30-f31-f34-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 64
+    },
+    {
+      "source_id": 64,
+      "title": "BMW G20 G21 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-g20-g21-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 65
+    },
+    {
+      "source_id": 65,
+      "title": "BMW F32 F33 F36 4 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/4-series/bmw-f32-f33-f36-4-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 66
+    },
+    {
+      "source_id": 66,
+      "title": "BMW G22 G23 G26 4 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/4-series/bmw-g22-g23-g26-4-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 67
+    },
+    {
+      "source_id": 67,
+      "title": "BMW E39 5 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/5-series/bmw-e39-5-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 68
+    },
+    {
+      "source_id": 68,
+      "title": "BMW E60 E61 5 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/5-series/bmw-e60-e61-5-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 69
+    },
+    {
+      "source_id": 69,
+      "title": "BMW F10 F11 5 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/5-series/bmw-f10-f11-5-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 70
+    },
+    {
+      "source_id": 70,
+      "title": "BMW G30 G31 5 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/5-series/bmw-g30-g31-5-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 71
+    },
+    {
+      "source_id": 71,
+      "title": "BMW E85 E86 Z4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z4/bmw-e85-e86-z4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 72
+    },
+    {
+      "source_id": 72,
+      "title": "BMW E89 Z4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z4/bmw-e89-z4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 73
+    },
+    {
+      "source_id": 73,
+      "title": "BMW G29 Z4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z4/bmw-g29-z4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 74
+    },
+    {
+      "source_id": 74,
+      "title": "BMW F97 X3M Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x3m/bmw-f97-x3m-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 75
+    },
+    {
+      "source_id": 75,
+      "title": "BMW F98 X4M Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x4m/bmw-f98-x4m-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 76
+    },
+    {
+      "source_id": 76,
+      "title": "BMW G01 X3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x3/bmw-g01-x3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 77
+    },
+    {
+      "source_id": 77,
+      "title": "BMW G02 X4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x4/bmw-g02-x4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 78
+    },
+    {
+      "source_id": 78,
+      "title": "BMW G05 X5 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x5/bmw-g05-x5-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 79
+    },
+    {
+      "source_id": 79,
+      "title": "BMW G06 X6 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/x6/bmw-g06-x6-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 80
+    },
+    {
+      "source_id": 80,
+      "title": "Cadillac ATS-V Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/cadillac/ats/cadillac-ats-v-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 81
+    },
+    {
+      "source_id": 81,
+      "title": "Cadillac CT4-V Blackwing Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/cadillac/ct4-v-blackwing/cadillac-ct4-v-blackwing-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 82
+    },
+    {
+      "source_id": 82,
+      "title": "Cadillac CT5-V Blackwing Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/cadillac/ct5-v-blackwing/cadillac-ct5-v-blackwing-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 83
+    },
+    {
+      "source_id": 83,
+      "title": "Cadillac Gen 3 CTS-V Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/cadillac/cts-v/cadillac-gen-3-cts-v-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 84
+    },
+    {
+      "source_id": 84,
+      "title": "Chevrolet 5th Gen Camaro Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/camaro/chevrolet-5th-gen-camaro-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 85
+    },
+    {
+      "source_id": 85,
+      "title": "Chevrolet 6th Gen Camaro Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/camaro/chevrolet-6th-gen-camaro-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 86
+    },
+    {
+      "source_id": 86,
+      "title": "Dodge Charger Narrowbody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/dodge/charger/dodge-charger-narrowbody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 87
+    },
+    {
+      "source_id": 87,
+      "title": "Dodge Charger Widebody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/dodge/charger/dodge-charger-widebody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 88
+    },
+    {
+      "source_id": 88,
+      "title": "Fiat 124 Spider Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/fiat/124/fiat-124-spider-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 89
+    },
+    {
+      "source_id": 89,
+      "title": "Ford 6th Gen Explorer Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/explorer/ford-6th-gen-explorer-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 90
+    },
+    {
+      "source_id": 90,
+      "title": "Honda 7th Gen Civic Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic/honda-7th-gen-civic-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 91
+    },
+    {
+      "source_id": 91,
+      "title": "Honda 8th Gen Civic Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic/honda-8th-gen-civic-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 92
+    },
+    {
+      "source_id": 92,
+      "title": "Honda 9th Gen Civic Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic/honda-9th-gen-civic-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 93
+    },
+    {
+      "source_id": 93,
+      "title": "Honda 10th Gen Civic Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic/honda-10th-gen-civic-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 94
+    },
+    {
+      "source_id": 94,
+      "title": "Honda 11th Gen Civic Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic/honda-11th-gen-civic-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 95
+    },
+    {
+      "source_id": 95,
+      "title": "Honda AP1 AP2 S2000 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/s2000/honda-ap1-ap2-s2000-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 96
+    },
+    {
+      "source_id": 96,
+      "title": "Infiniti G35 Coupe Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/infiniti/g35/infiniti-g35-coupe-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 97
+    },
+    {
+      "source_id": 97,
+      "title": "Infiniti G37 Coupe Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/infiniti/g37/infiniti-g37-coupe-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 98
+    },
+    {
+      "source_id": 98,
+      "title": "Infiniti Q50 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/infiniti/q50/infiniti-q50-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 99
+    },
+    {
+      "source_id": 99,
+      "title": "Infiniti Q60 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/infiniti/q60/infiniti-q60-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 100
+    },
+    {
+      "source_id": 100,
+      "title": "Kia CK Stinger Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/kia/stinger/kia-ck-stinger-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 101
+    },
+    {
+      "source_id": 101,
+      "title": "Mazda NC MX-5 Miata Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mazda/miata/mazda-nc-miata-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 102
+    },
+    {
+      "source_id": 102,
+      "title": "Mazda ND MX-5 Miata Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mazda/miata/mazda-nd-mx-5-miata-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 103
+    },
+    {
+      "source_id": 103,
+      "title": "Mazda FD RX-7 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mazda/rx-7/mazda-fd-rx-7-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 104
+    },
+    {
+      "source_id": 104,
+      "title": "Mazda RX-8 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mazda/rx-8/mazda-rx-8-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 105
+    },
+    {
+      "source_id": 105,
+      "title": "Mercedes-Benz BR212 E-Class AMG Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mercedes-benz/e-class-amg/mercedes-benz-br212-e-class-amg-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 106
+    },
+    {
+      "source_id": 106,
+      "title": "Mercedes-Benz BR205 C-Class AMG Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mercedes-benz/c-class-amg/mercedes-benz-br205-c-class-amg-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 107
+    },
+    {
+      "source_id": 107,
+      "title": "Nissan R32 GT-R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/gt-r/nissan-r32-gt-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 108
+    },
+    {
+      "source_id": 108,
+      "title": "Nissan R33 GT-R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/gt-r/nissan-r33-gt-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 109
+    },
+    {
+      "source_id": 109,
+      "title": "Nissan R35 GT-R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/gt-r/nissan-r35-gt-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 110
+    },
+    {
+      "source_id": 110,
+      "title": "Pontiac 5th Gen GTO Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/pontiac/gto/pontiac-5th-gen-gto-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 111
+    },
+    {
+      "source_id": 111,
+      "title": "Porsche 987 Cayman Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-987-cayman-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 112
+    },
+    {
+      "source_id": 112,
+      "title": "Porsche 718 Boxster Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-718-boxster-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 113
+    },
+    {
+      "source_id": 113,
+      "title": "Porsche 981 Boxster Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-981-boxster-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 114
+    },
+    {
+      "source_id": 114,
+      "title": "Porsche 987 Boxster Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-987-boxster-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 115
+    },
+    {
+      "source_id": 115,
+      "title": "Porsche 986 Boxster Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-986-boxster-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 116
+    },
+    {
+      "source_id": 116,
+      "title": "Porsche 958 Cayenne Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayenne/porsche-958-cayenne-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 117
+    },
+    {
+      "source_id": 117,
+      "title": "Porsche 9YA Cayenne Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayenne/porsche-9ya-cayenne-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 118
+    },
+    {
+      "source_id": 118,
+      "title": "Porsche 95B Macan Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/macan/porsche-95b-macan-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 119
+    },
+    {
+      "source_id": 119,
+      "title": "Scion ZN6/Gen 1 FR-S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/scion/fr-s/scion-zn6-gen-1-fr-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 120
+    },
+    {
+      "source_id": 120,
+      "title": "Subaru ZC6/Gen 1 BRZ Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/brz/subaru-zc6-gen-1-brz-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 121
+    },
+    {
+      "source_id": 121,
+      "title": "Subaru ZD8/Gen 2 BRZ Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/brz/subaru-zd8-gen-2-brz-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 122
+    },
+    {
+      "source_id": 122,
+      "title": "Subaru GD WRX Sedan Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx/subaru-gd-wrx-sedan-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 123
+    },
+    {
+      "source_id": 123,
+      "title": "Subaru GR WRX Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx/subaru-gr-wrx-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 124
+    },
+    {
+      "source_id": 124,
+      "title": "Subaru VA WRX Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx/subaru-va-wrx-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 125
+    },
+    {
+      "source_id": 125,
+      "title": "Subaru VB WRX Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx/subaru-vb-wrx-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 126
+    },
+    {
+      "source_id": 126,
+      "title": "Subaru GD WRX STI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx-sti/subaru-gd-wrx-sti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 127
+    },
+    {
+      "source_id": 127,
+      "title": "Subaru GR WRX STI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx-sti/subaru-gr-wrx-sti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 128
+    },
+    {
+      "source_id": 128,
+      "title": "Subaru VA WRX STI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx-sti/subaru-va-wrx-sti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 129
+    },
+    {
+      "source_id": 129,
+      "title": "Tesla Model 3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/tesla/model-3/tesla-model-3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 130
+    },
+    {
+      "source_id": 130,
+      "title": "Toyota GR Corolla Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/toyota/corolla/toyota-gr-corolla-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 131
+    },
+    {
+      "source_id": 131,
+      "title": "Toyota 7th Gen Celica Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/toyota/celica/toyota-7th-gen-celica-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 132
+    },
+    {
+      "source_id": 132,
+      "title": "Ford Performance Mustang Dark Horse R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-performance-dark-horse-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw(2).txt",
+      "capture_block": 133
+    },
+    {
+      "source_id": 133,
+      "title": "BMW E90 E91 LCI 3 Series Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-e90-e91-lci-3-series-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 7
+    },
+    {
+      "source_id": 134,
+      "title": "BMW Spec E46 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/3-series/bmw-spec-e46-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 10
+    },
+    {
+      "source_id": 135,
+      "title": "BMW G26 i4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/4-series/bmw-g26-i4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 13
+    },
+    {
+      "source_id": 136,
+      "title": "BMW E36/7 E36/8 Z3 M Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z3-m/bmw-e36-7-e36-8-z3-m-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 18
+    },
+    {
+      "source_id": 137,
+      "title": "BMW E36/7 E36/8 Z3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/bmw/z3/bmw-e36-7-e36-8-z3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 19
+    },
+    {
+      "source_id": 138,
+      "title": "Chevrolet 6th Gen Camaro ZL1 1LE Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/camaro/chevrolet-6th-gen-camaro-zl1-1le-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 22
+    },
+    {
+      "source_id": 139,
+      "title": "Chevrolet 6th Gen Camaro ZL1 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/camaro/chevrolet-6th-gen-camaro-zl1-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 23
+    },
+    {
+      "source_id": 140,
+      "title": "Chevrolet C5 Corvette Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c5-corvette-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 24
+    },
+    {
+      "source_id": 141,
+      "title": "Chevrolet C6 Corvette Narrowbody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c6-corvette-narrowbody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 25
+    },
+    {
+      "source_id": 142,
+      "title": "Chevrolet C6 Corvette Widebody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c6-corvette-widebody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 26
+    },
+    {
+      "source_id": 143,
+      "title": "Chevrolet C7 Corvette Narrowbody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c7-corvette-narrowbody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 27
+    },
+    {
+      "source_id": 144,
+      "title": "Chevrolet C7 Corvette Widebody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c7-corvette-widebody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 28
+    },
+    {
+      "source_id": 145,
+      "title": "Chevrolet C8 Corvette Narrowbody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c8-corvette-narrowbody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 29
+    },
+    {
+      "source_id": 146,
+      "title": "Chevrolet C8 Corvette ZR1 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-c8-corvette-zr1-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 30
+    },
+    {
+      "source_id": 147,
+      "title": "Chevrolet Spec Corvette Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/corvette/chevrolet-spec-corvette-corvette-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 31
+    },
+    {
+      "source_id": 148,
+      "title": "Chevrolet SS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/chevrolet/ss/chevrolet-ss-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 32
+    },
+    {
+      "source_id": 149,
+      "title": "Dodge Challenger Narrowbody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/dodge/challenger/dodge-challenger-narrowbody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 33
+    },
+    {
+      "source_id": 150,
+      "title": "Dodge Challenger Widebody Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/dodge/challenger/dodge-challenger-widebody-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 34
+    },
+    {
+      "source_id": 151,
+      "title": "Ferrari 458 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ferrari/458/ferrari-458-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 35
+    },
+    {
+      "source_id": 152,
+      "title": "Ferrari 488 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ferrari/488/ferrari-488-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 36
+    },
+    {
+      "source_id": 153,
+      "title": "Ferrari F8 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ferrari/f8/ferrari-f8-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 37
+    },
+    {
+      "source_id": 154,
+      "title": "Ford S197 Mustang Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-s197-mustang-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 39
+    },
+    {
+      "source_id": 155,
+      "title": "Ford S550 Mustang GT350/R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-s550-mustang-gt350-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 40
+    },
+    {
+      "source_id": 156,
+      "title": "Ford S550 Mustang GT500 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-s550-mustang-gt500-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 41
+    },
+    {
+      "source_id": 157,
+      "title": "Ford S550 Mustang Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-s550-mustang-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 42
+    },
+    {
+      "source_id": 158,
+      "title": "Ford S650 Mustang Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-s650-mustang-ecoboost-gt-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 43
+    },
+    {
+      "source_id": 159,
+      "title": "Ford SN95 Mustang Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/ford/mustang/ford-sn95-mustang-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 44
+    },
+    {
+      "source_id": 160,
+      "title": "Honda FK8 Civic Type R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic-type-r/honda-fk8-civic-type-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 45
+    },
+    {
+      "source_id": 161,
+      "title": "Honda FL5 Civic Type R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/honda/civic-type-r/honda-fl5-civic-type-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 46
+    },
+    {
+      "source_id": 162,
+      "title": "Lexus URL10 GS F Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/lexus/gs/lexus-url10-gs-f-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 47
+    },
+    {
+      "source_id": 163,
+      "title": "Lexus XE20 IS F Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/lexus/is/lexus-xe20-is-f-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 48
+    },
+    {
+      "source_id": 164,
+      "title": "Lexus XE20 IS250 IS350 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/lexus/is/lexus-xe20-is250-is350-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 49
+    },
+    {
+      "source_id": 165,
+      "title": "Lexus USC10 RC-F Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/lexus/rc/lexus-xc10-rc350-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 51
+    },
+    {
+      "source_id": 166,
+      "title": "Lotus Emira Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/lotus/emira/lotus-emira-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 52
+    },
+    {
+      "source_id": 167,
+      "title": "Mitsubishi Lancer Evolution VIII & IX Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mitsubishi/lancer-evolution/mitsubishi-lancer-evolution-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 53
+    },
+    {
+      "source_id": 168,
+      "title": "Mitsubishi Lancer Evolution X Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/mitsubishi/lancer-evolution/mitsubishi-lancer-evolution-x-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 54
+    },
+    {
+      "source_id": 169,
+      "title": "Nissan 350Z Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/350z/nissan-350z-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 55
+    },
+    {
+      "source_id": 170,
+      "title": "Nissan 370Z Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/370z/nissan-370z-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 56
+    },
+    {
+      "source_id": 171,
+      "title": "Nissan Z Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/nissan/z/nissan-z-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 57
+    },
+    {
+      "source_id": 172,
+      "title": "Pontiac G8  Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/pontiac/g8/pontiac-g8-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 58
+    },
+    {
+      "source_id": 173,
+      "title": "Porsche 911 991 GT2RS & GT3RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-991-gt2rs-and-gt3rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 59
+    },
+    {
+      "source_id": 174,
+      "title": "Porsche 911 991 GTS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-991-gts-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 60
+    },
+    {
+      "source_id": 175,
+      "title": "Porsche 911 991 Turbo Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-991-turbo-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 61
+    },
+    {
+      "source_id": 176,
+      "title": "Porsche 911 991.1 Carrera & Carrera S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-9911-carrera-and-carrera-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 62
+    },
+    {
+      "source_id": 177,
+      "title": "Porsche 911 991.1 Carrera/Targa 4 & 4S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-9911-carrera-targa-4-and-4s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 63
+    },
+    {
+      "source_id": 178,
+      "title": "Porsche 911 991.2 Carrera, S & T Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-9912-carrera-s-and-t-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 64
+    },
+    {
+      "source_id": 179,
+      "title": "Porsche 911 991.2 Carrera/Targa 4 & 4S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-9912-carrera-targa-4-and-4s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 65
+    },
+    {
+      "source_id": 180,
+      "title": "Porsche 911 992.1 GTS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-992-1-gts-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 66
+    },
+    {
+      "source_id": 181,
+      "title": "Porsche 911 992.1 Turbo Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-992-1-turbo-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 67
+    },
+    {
+      "source_id": 182,
+      "title": "Porsche 911 992 GT3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-992-carrera-gt3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 68
+    },
+    {
+      "source_id": 183,
+      "title": "Porsche 911 992.1 Carrera, S & T Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-992-carrera-s-and-t-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 69
+    },
+    {
+      "source_id": 184,
+      "title": "Porsche 911 992.1 GT3RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-9921-gt3rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 70
+    },
+    {
+      "source_id": 185,
+      "title": "Porsche 911 993 Carrera and Carrera 4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-993-carrera-and-carrera-4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 71
+    },
+    {
+      "source_id": 186,
+      "title": "Porsche 911 993 Carrera S/4S & Turbo/S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-993-carrera-s-4s-and-turbo-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 72
+    },
+    {
+      "source_id": 187,
+      "title": "Porsche 911 996 C4S & Turbo Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-996-c4s-and-turbo-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 73
+    },
+    {
+      "source_id": 188,
+      "title": "Porsche 911 996 Carrera and Carrera 4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-996-carrera-and-carrera-4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 74
+    },
+    {
+      "source_id": 189,
+      "title": "Porsche 911 996 GT2 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-996-gt2-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 75
+    },
+    {
+      "source_id": 190,
+      "title": "Porsche 911 996 GT3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-996-gt3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 76
+    },
+    {
+      "source_id": 191,
+      "title": "Porsche 911 997 Carrera & Carrera S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-997-carrera-and-carrera-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 77
+    },
+    {
+      "source_id": 192,
+      "title": "Porsche 911 997 Carrera/Targa 4 & 4S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-997-carrera-targa-4-and-4s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 78
+    },
+    {
+      "source_id": 193,
+      "title": "Porsche 911 997 GT2/RS & GT3RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-997-gt2-rs-and-gt3rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 79
+    },
+    {
+      "source_id": 194,
+      "title": "Porsche 911 997 GT3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-997-gt3-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 80
+    },
+    {
+      "source_id": 195,
+      "title": "Porsche 911 997 GTS & Turbo Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-911-997-gts-and-turbo-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 81
+    },
+    {
+      "source_id": 196,
+      "title": "Porsche 911 991 GT3 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/911/porsche-991-gt3-911-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 82
+    },
+    {
+      "source_id": 197,
+      "title": "Porsche 718 Boxster Spyder Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-718-spyder-boxster-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 84
+    },
+    {
+      "source_id": 198,
+      "title": "Porsche 718 Spyder RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-718-spyder-rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 85
+    },
+    {
+      "source_id": 199,
+      "title": "Porsche 981 Boxster Spyder Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/boxster/porsche-981-boxster-spyder-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 86
+    },
+    {
+      "source_id": 200,
+      "title": "Porsche 718 Cayman GT4 Clubsport Cayman Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-718-cayman-gt4-clubsport-cayman-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 90
+    },
+    {
+      "source_id": 201,
+      "title": "Porsche 718 Cayman GT4 RS Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-718-cayman-gt4-rs-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 91
+    },
+    {
+      "source_id": 202,
+      "title": "Porsche 718 Cayman GT4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-718-cayman-gt4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 92
+    },
+    {
+      "source_id": 203,
+      "title": "Porsche 718 Cayman Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-718-cayman-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 93
+    },
+    {
+      "source_id": 204,
+      "title": "Porsche 981 Cayman GT4 Clubsport Cayman Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-981-cayman-gt4-clubsport-cayman-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 94
+    },
+    {
+      "source_id": 205,
+      "title": "Porsche 981 Cayman GT4 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-981-cayman-gt4-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 95
+    },
+    {
+      "source_id": 206,
+      "title": "Porsche 981 Cayman Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-981-cayman-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 96
+    },
+    {
+      "source_id": 207,
+      "title": "Porsche Spec Cayman (SPC) Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/porsche/cayman/porsche-spec-cayman-spc-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 98
+    },
+    {
+      "source_id": 208,
+      "title": "Subaru 2004 GD WRX STI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx-sti/subaru-2004-gd-wrx-sti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 99
+    },
+    {
+      "source_id": 209,
+      "title": "Subaru GD WRX Wagon Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/subaru/wrx/subaru-gd-wrx-wagon-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 104
+    },
+    {
+      "source_id": 210,
+      "title": "Tesla Gen 2 Model S Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/tesla/model-s/tesla-model-s-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 108
+    },
+    {
+      "source_id": 211,
+      "title": "Tesla Gen 1 Model X Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/tesla/model-x/tesla-gen-1-model-x-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 109
+    },
+    {
+      "source_id": 212,
+      "title": "Tesla Gen 2 Model X Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/tesla/model-x/tesla-gen-2-model-x-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 110
+    },
+    {
+      "source_id": 213,
+      "title": "Tesla Model Y Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/tesla/model-y/tesla-model-y-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 111
+    },
+    {
+      "source_id": 214,
+      "title": "Toyota Gen 1 86 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/toyota/86/toyota-gen-1-86-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 112
+    },
+    {
+      "source_id": 215,
+      "title": "Toyota Gen 2 GR86 Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/toyota/86/toyota-gr86-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 113
+    },
+    {
+      "source_id": 216,
+      "title": "Toyota GR Supra Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/toyota/supra/toyota-gr-supra-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 114
+    },
+    {
+      "source_id": 217,
+      "title": "Volkswagen (VW) MK5 Jetta SportWagen Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/alltrack-sportwagen/volkswagen-vw-mk5-jetta-sportwagen-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 115
+    },
+    {
+      "source_id": 218,
+      "title": "Volkswagen (VW) MK6 Jetta SportWagen Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/alltrack-sportwagen/volkswagen-vw-mk6-jetta-sportwagen-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 116
+    },
+    {
+      "source_id": 219,
+      "title": "Volkswagen (VW) MK7 Alltrack/SportWagen Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/alltrack-sportwagen/volkswagen-vw-mk7-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 117
+    },
+    {
+      "source_id": 220,
+      "title": "Volkswagen (VW) MK5 R32 Golf R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf-r/volkswagen-vw-mk5-r32-golf-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 118
+    },
+    {
+      "source_id": 221,
+      "title": "Volkswagen (VW) MK6 Golf R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf-r/volkswagen-vw-mk6-golf-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 119
+    },
+    {
+      "source_id": 222,
+      "title": "Volkswagen (VW) MK7 Golf R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf-r/volkswagen-vw-mk7-golf-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 120
+    },
+    {
+      "source_id": 223,
+      "title": "Volkswagen (VW) MK8 Golf R Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf-r/volkswagen-vw-mk8-golf-r-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 121
+    },
+    {
+      "source_id": 224,
+      "title": "Volkswagen (VW) MK5 Golf Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf/volkswagen-vw-mk5-golf-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 122
+    },
+    {
+      "source_id": 225,
+      "title": "Volkswagen (VW) MK6 Golf Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf/volkswagen-vw-mk6-golf-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 123
+    },
+    {
+      "source_id": 226,
+      "title": "Volkswagen (VW) MK7 Golf Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf/volkswagen-vw-mk7-golf-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 124
+    },
+    {
+      "source_id": 227,
+      "title": "Volkswagen (VW) MK8 Golf Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/golf/volkswagen-vw-mk8-golf-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 125
+    },
+    {
+      "source_id": 228,
+      "title": "Volkswagen (VW) MK5 GTI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/gti/volkswagen-vw-mk5-gti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 126
+    },
+    {
+      "source_id": 229,
+      "title": "Volkswagen (VW) MK6 GTI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/gti/volkswagen-vw-mk6-gti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 127
+    },
+    {
+      "source_id": 230,
+      "title": "Volkswagen (VW) MK7 GTI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/gti/volkswagen-vw-mk7-gti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 128
+    },
+    {
+      "source_id": 231,
+      "title": "Volkswagen (VW) MK8 GTI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/gti/volkswagen-vw-mk8-gti-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 129
+    },
+    {
+      "source_id": 232,
+      "title": "Volkswagen (VW) MK5 Jetta Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/jetta-gli/volkswagen-vw-mk5-jetta-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 130
+    },
+    {
+      "source_id": 233,
+      "title": "Volkswagen (VW) MK6 Jetta/GLI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/jetta-gli/volkswagen-vw-mk6-jetta-gli-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 131
+    },
+    {
+      "source_id": 234,
+      "title": "Volkswagen (VW) MK7 Jetta/GLI Wheel & Tire Fitment Guide",
+      "url": "https://apexwheels.com/fitment-guides/vw/jetta-gli/volkswagen-vw-mk7-jetta-gli-wheel-and-tire-fitment-guide",
+      "capture_file": "apex_raw2(2).txt",
+      "capture_block": 132
+    }
+  ]
+}
