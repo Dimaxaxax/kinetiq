@@ -207,7 +207,6 @@ a{color:var(--accent);text-decoration:none}
 .res-mini-chip.left{left:16px}
 .res-mini-chip.right{right:16px}
 .res-compact-canvas{display:block;width:160px;height:160px;margin:8px auto 0;filter:drop-shadow(0 12px 28px rgba(0,0,0,.45))}
-.res-compact-body{padding:0 16px 14px}
 .res-compact-name{font-size:19px;line-height:1.1;font-weight:700;color:var(--ink);text-align:center;margin-top:2px}
 .res-compact-sub{font-size:15px;line-height:1.2;color:var(--accent);text-align:center;margin-top:4px;min-height:18px}
 .res-compact-sub.muted{color:var(--ink-2)}
@@ -219,10 +218,6 @@ a{color:var(--accent);text-decoration:none}
 .res-total.compact{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 0 2px;margin-top:12px;border-top:1px solid rgba(176,141,87,.35)}
 .res-total.compact .k{font-size:10px;letter-spacing:.16em}
 .res-total.compact .v{font-size:31px;line-height:1;text-align:center}
-.res-incl-card{margin-top:14px;padding:14px 16px 12px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(28,31,35,.92),rgba(20,22,26,.98))}
-.res-incl-card .ttl{font-size:13px;letter-spacing:0;color:var(--ink);font-family:var(--display);text-transform:none;margin-bottom:8px}
-.res-incl-card .incl-row{font-size:13.5px;padding:4px 0 4px 18px}
-.res-incl-card .incl-row::before{top:11px;width:8px;height:1.5px}
 .res-rate-compact{margin-top:10px;padding:0 2px;display:flex;align-items:flex-start;gap:8px;color:var(--ink-3);font-size:11.5px;line-height:1.45}
 .res-rate-compact svg{width:16px;height:16px;flex:0 0 auto;margin-top:1px}
 .res-compact-cta{margin-top:16px}
@@ -235,7 +230,6 @@ a{color:var(--accent);text-decoration:none}
 @media(max-height:760px){
   .res-compact-top{min-height:170px}
   .res-compact-canvas{width:132px;height:132px}
-  .res-incl-card .incl-row:nth-child(n+5){display:none}
 }
 
 /* ===== BURGER MENU OVERLAY ===== */
@@ -1070,23 +1064,33 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 .pricebar .pb-go{min-width:80px;min-height:48px;padding:12px 18px}
 .bars{bottom:calc(var(--app-safe-bottom) + 9px)}
 
-/* Larger wheel artwork with the caption and tags in one text column.
-   Card height follows its content rather than shrinking the illustration. */
-#typelist{
-  --type-thumb:clamp(104px,29vw,120px);
-  gap:14px;
+/* Keep the tall exploded views as prominent as the monoblock. */
+#card-type .headline,.res-card .headline{font-size:clamp(23px,6.4vw,28px);margin-bottom:14px}
+#typelist{gap:10px;margin-top:0}
+#typelist .typecard{padding:0;border-radius:18px}
+.tc-row{display:grid;grid-template-columns:minmax(0,38fr) minmax(0,62fr);align-items:center}
+.tc-thumb{
+  width:100%;height:clamp(130px,37vw,164px);margin:0;padding:5px 6px;
+  background:radial-gradient(ellipse at center,rgba(228,225,218,.10),transparent 72%);
 }
-#typelist .typecard{padding:16px;border-radius:18px}
-.tc-row{display:grid;grid-template-columns:var(--type-thumb) minmax(0,1fr);column-gap:14px;row-gap:12px;align-items:center}
-.tc-thumb{width:var(--type-thumb);height:var(--type-thumb);margin:0}
-.tc-main{gap:8px;align-self:center}
-.tc-name{font-size:clamp(18px,5vw,21px);line-height:1.2;padding-right:22px}
-.tc-short{font-size:14px;line-height:1.45}
-#typelist .opt-tick{position:absolute;top:12px;right:12px;width:24px;height:24px}
-#typelist .opt.selected .opt-tick i{width:24px;height:24px}
-.tc-tags{gap:5px;margin-top:2px}
-.tc-tag{font-family:var(--font);font-size:11px;line-height:1.35;letter-spacing:0;padding:3px 8px}
+.tc-main{gap:6px;padding:13px 12px 13px 6px}
+.tc-name{font-size:clamp(18px,5.15vw,23px);line-height:1.15;overflow-wrap:anywhere}
+.tc-short{font-size:14px;line-height:1.4}
+#typelist .opt-tick{
+  position:absolute;top:8px;left:8px;width:21px;height:21px;
+  background:var(--bg);border-color:var(--line-2);
+}
+#typelist .opt.selected .opt-tick{border-color:var(--accent)}
+#typelist .opt.selected .opt-tick i{width:21px;height:21px}
+.tc-tags{column-gap:9px;row-gap:3px;margin-top:3px}
+.tc-tag{
+  display:inline-flex;align-items:center;gap:4px;padding:0;border:0;
+  color:var(--ink-2);font:12px/1.3 var(--font);white-space:normal;
+}
+.tc-tag::before{content:'';width:3px;height:3px;flex:none;border-radius:50%;background:var(--accent)}
 .tc-extra-desc{font-size:14px}
+#typelist .tc-extra{margin-inline:14px}
+#typelist .typecard.sel .tc-extra{margin-top:0;margin-bottom:14px}
 
 /* Options are a comfortably scrolling list, not a fit-to-screen grid.
    Title, price/notice and disclosure each have a clear place and separation. */
@@ -1121,40 +1125,49 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 .ref-btn.rv+.ref-btn.rv{margin-top:0}
 .ref-chosen{margin-top:12px;padding:11px 13px}
 
-/* Summary: product, specifications and price share the same column edges.
-   The footer stays outside the scroll area; every inclusion remains visible. */
-.res-card{padding-bottom:14px}
-.res-card .headline{font-size:24px;margin-bottom:12px}
+/* The product and order details use the same horizontal guides. */
 .res-card #result{min-width:0}
 .res-wrap{margin-top:0}
-.res-compact-card{margin-top:0;border-radius:18px}
-.res-compact-top{min-height:0;padding:16px;display:grid;grid-template-columns:clamp(104px,30vw,136px) minmax(0,1fr);align-items:center;gap:16px;background:radial-gradient(ellipse at 22% 50%,rgba(176,141,87,.08),transparent 65%)}
-.res-compact-canvas{width:100%;height:auto;aspect-ratio:1;margin:0;grid-column:auto}
+.res-compact-card{
+  --result-inset:clamp(12px,4vw,18px);
+  --result-gap:14px;
+  --result-columns:repeat(2,minmax(0,1fr));
+  margin-top:0;padding:0 var(--result-inset);border-radius:18px;
+}
+.res-compact-top{
+  min-height:0;padding:12px 0;display:grid;grid-template-columns:var(--result-columns);
+  gap:var(--result-gap);align-items:center;
+  background:radial-gradient(ellipse at 22% 50%,rgba(176,141,87,.11),transparent 60%);
+}
+.res-compact-canvas{width:min(100%,156px);height:auto;aspect-ratio:1;margin:0;justify-self:center}
 .res-product-copy{min-width:0}
-.res-compact-name{font-size:20px;line-height:1.2;text-align:left;margin:0;overflow-wrap:anywhere}
+.res-compact-name{font-size:clamp(18px,5.4vw,23px);line-height:1.15;text-align:left;margin:0;overflow-wrap:anywhere}
 .res-compact-sub{font-size:14px;line-height:1.4;text-align:left;margin-top:6px;min-height:0;overflow-wrap:anywhere}
-.res-compact-top.no-wheel{grid-template-columns:minmax(0,1fr);min-height:0}
+.res-compact-top.no-wheel{grid-template-columns:minmax(0,1fr);padding-block:16px}
 .res-compact-note{margin-top:8px;padding:0;font-size:13px;line-height:1.5;text-align:left}
-.res-compact-body{padding:0 16px 16px}
-.res-spec-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0}
-.res-spec-grid>div{min-width:0;padding:11px 0}
-.res-spec-grid>div+div{padding-left:16px;border-left:1px solid var(--line)}
-.res-spec-grid dt{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px}
-.res-spec-grid dd{font-size:15px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
-.res-optbox{margin-top:0;padding-top:7px;border-top:0}
-.res-optline{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:14px;padding:7px 0;font-size:13px;line-height:1.4}
-.res-card .res-total.compact{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;gap:14px;padding:14px 0 0;margin-top:0;border-top:0}
-.res-optbox+.res-total.compact{border-top:1px solid var(--line);margin-top:7px}
-.res-card .res-total.compact .k{max-width:105px;font-size:10px;letter-spacing:.07em;line-height:1.5}
-.res-card .res-total.compact .v{font-size:clamp(26px,7.5vw,32px);line-height:1.1;white-space:nowrap;text-align:right;text-shadow:none}
-.res-card .res-total.compact::after{height:1px;background:var(--accent);opacity:.6;animation:none}
-.res-incl-card{display:block;margin-top:12px;padding:0;border-radius:16px;overflow:hidden}
-.res-incl-card .ttl{margin:0;padding:12px 16px;font-size:14px;line-height:1.3;border-bottom:1px solid var(--line)}
-.res-incl-list{display:grid;grid-template-columns:minmax(0,1fr)}
-.res-card .res-incl-card .incl-row{display:block;min-width:0;font-size:12.5px;line-height:1.4;padding:10px 12px 10px 28px}
-.res-card .res-incl-card .incl-row+.incl-row{border-top:1px solid var(--line)}
-.res-card .res-incl-card .incl-row::before{left:13px;top:16px;width:6px;height:1.5px}
-.res-rate-compact{margin-top:10px;padding:0;font-size:11.5px;line-height:1.45}
+.res-spec-grid{
+  display:grid;grid-template-columns:var(--result-columns);gap:var(--result-gap);
+  border-block:1px solid var(--line);margin:0;
+}
+.res-spec-grid>div{min-width:0;padding:10px 0}
+.res-spec-grid dt{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);margin-bottom:3px}
+.res-spec-grid dd{font-size:15px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.res-optbox{margin:0;padding:5px 0;border-top:0;border-bottom:1px solid var(--line)}
+.res-optline{display:grid;grid-template-columns:minmax(0,1fr) max-content;gap:var(--result-gap);padding:5px 0;font-size:13px;line-height:1.4}
+.res-optline .n{overflow-wrap:anywhere}
+.res-card .res-total.compact{
+  display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;
+  gap:var(--result-gap);padding:12px 0;margin-top:0;border:0;border-bottom:1px solid rgba(176,141,87,.4);
+}
+.res-card .res-total.compact .k{max-width:120px;font-size:10px;letter-spacing:.07em;line-height:1.5}
+.res-card .res-total.compact .v{font-size:clamp(24px,7.6vw,34px);line-height:1.1;white-space:nowrap;text-align:right;text-shadow:none}
+.res-card .res-total.compact::after{content:none}
+.res-included{padding:12px 0}
+.res-included .ttl{margin:0 0 8px;color:var(--ink);font-size:14px;font-weight:600;line-height:1.3}
+.res-incl-list{display:grid;grid-template-columns:minmax(0,1fr);column-gap:var(--result-gap);row-gap:6px}
+.res-card .res-included .incl-row{min-width:0;font-size:13px;line-height:1.4;padding:0 0 0 12px}
+.res-card .res-included .incl-row::before{top:.64em;width:5px;height:1.5px}
+.res-rate-compact{padding:0;font-size:12px;line-height:1.45}
 #navbar-result .nav-go{font-size:15px;letter-spacing:0}
 
 /* Secondary views share the same safe areas and readable touch controls. */
@@ -1177,26 +1190,17 @@ body.kq-reflowing *,body.kq-reflowing *::before,body.kq-reflowing *::after{trans
 button:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px}
 
 @media(min-width:360px){
-  .res-incl-list{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .res-card .res-incl-card .incl-row:nth-child(2){border-top:0}
-  .res-card .res-incl-card .incl-row:nth-child(even){border-left:1px solid var(--line)}
-  .res-card .res-incl-card .incl-row:last-child{grid-column:1/-1}
+  .res-incl-list{grid-template-columns:var(--result-columns)}
+  .res-incl-list .incl-row:last-child{grid-column:1/-1}
 }
 @media(min-width:420px){
   .disk-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
 @media(max-width:359px){
-  #typelist{--type-thumb:88px;gap:12px}
-  #typelist .typecard{padding-left:12px;padding-right:12px}
-  .tc-row{column-gap:10px;row-gap:10px}
-  .tc-name{font-size:18px;padding-right:18px}
+  .tc-main{padding-right:9px}
   .tc-short{font-size:13px}
-  .tc-tag{font-size:10.5px;padding:3px 6px}
-  .tc-tags{gap:4px}
-  .res-compact-top{gap:12px;padding:14px}
-  .res-compact-body{padding:0 14px 14px}
-  .res-compact-name{font-size:18px}
-  .res-spec-grid>div+div{padding-left:12px}
+  .tc-tag{font-size:11px}
+  .res-compact-card{--result-gap:10px}
   #optlist .opt{padding:16px}
   .pricebar .pb-val{font-size:24px}
   .pricebar .pb-val.muted{font-size:13px}
@@ -2309,11 +2313,10 @@ fill="currentColor" stroke="none"><path d="M3050 3955 l0 -595 130 0 130 0 0 153 
 .card-in{
   padding:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 122px) 22px calc(env(safe-area-inset-bottom) + 40px)!important;
 }
-.res-card{
-  padding-top:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 128px)!important;
-  padding-bottom:calc(env(safe-area-inset-bottom) + 18px)!important;
+#card-type .card-in,#card-result .card-in{
+  padding-inline:var(--page-left) var(--page-right)!important;
+  padding-bottom:14px!important;
 }
-.res-card .headline{margin-bottom:12px!important;}
 .bars{
   bottom:calc(env(safe-area-inset-bottom) + 3px)!important;
   left:18px!important; right:18px!important;
@@ -2328,13 +2331,10 @@ fill="currentColor" stroke="none"><path d="M3050 3955 l0 -595 130 0 130 0 0 153 
   position:relative;z-index:50;
 }
 .res-rate-compact{margin-top:12px!important;}
-.res-incl-card{margin-top:12px!important;}
 @media (max-height:800px){
   .head-scrim{height:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 118px)!important;}
   .toprow{top:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 54px)!important;}
   .card-in{padding:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 116px) 22px calc(env(safe-area-inset-bottom) + 36px)!important;}
-  .res-card{padding-top:calc(max(env(safe-area-inset-top), var(--tg-safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px)) + 122px)!important;}
-  .res-card .headline{margin-bottom:10px!important;}
   .res-card .cta, .res-compact-cta{margin-top:16px!important;}
 }
 
@@ -5077,24 +5077,22 @@ function buildResult(){
             ${S.refChoice==='own'?`<div class="res-compact-note">После заявки менеджеру можно отправить фото, рисунок или 3D-модель — адаптируем дизайн под ваш автомобиль.</div>`:''}
           </div>
         </div>
-        <div class="res-compact-body">
-          <dl class="res-spec-grid">
-            <div><dt>Тип диска</dt><dd>${typeName(S.type)}</dd></div>
-            <div><dt>Диаметр</dt><dd>${dlabel}</dd></div>
-          </dl>
-          ${hasOpts?`<div class="res-optbox">${optRows}</div>`:''}
-          <div class="res-total compact"><span class="k">Итого за комплект</span><span class="v">${fmt(totalRub())}</span></div>
-        </div>
-      </div>
-      <div class="res-incl-card">
-        <div class="ttl">Включено в стоимость</div>
-        <div class="res-incl-list">
-          <div class="incl-row">Любой дизайн дисков</div>
-          <div class="incl-row">Любые параметры под ваш автомобиль</div>
-          <div class="incl-row">3D-рендер до производства</div>
-          <div class="incl-row">Доставка по Москве и до ТК</div>
-          <div class="incl-row">Гарантия 5 лет</div>
-        </div>
+        <dl class="res-spec-grid">
+          <div><dt>Тип диска</dt><dd>${typeName(S.type)}</dd></div>
+          <div><dt>Диаметр</dt><dd>${dlabel}</dd></div>
+        </dl>
+        ${hasOpts?`<div class="res-optbox">${optRows}</div>`:''}
+        <div class="res-total compact"><span class="k">Итого за комплект</span><span class="v">${fmt(totalRub())}</span></div>
+        <section class="res-included" aria-labelledby="result-included-title">
+          <h2 class="ttl" id="result-included-title">Включено в стоимость</h2>
+          <div class="res-incl-list">
+            <div class="incl-row">Любой дизайн дисков</div>
+            <div class="incl-row">Любые параметры под ваш автомобиль</div>
+            <div class="incl-row">3D-рендер до производства</div>
+            <div class="incl-row">Доставка по Москве и до ТК</div>
+            <div class="incl-row">Гарантия 5 лет</div>
+          </div>
+        </section>
       </div>
       <div class="res-rate-compact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg><span>Стоимость обновляется ежедневно по актуальному курсу валют.</span></div>
     </div>`;
